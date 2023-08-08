@@ -6,8 +6,8 @@ import threading
 import requests
 from bs4 import BeautifulSoup
 
-DOMINIO = "https://django-anuncios.solyd.com.br"
-URL_AUTOMOVEIS = "https://django-anuncios.solyd.com.br/automoveis/"
+DOMINIO = "https://exemplo.com.br"
+URL_AUTOMOVEIS = "https://exemplo.com.br/anuncios/"
 LINKS = []
 TELEFONES = []
 
