@@ -1,5 +1,3 @@
-# -> pip install -r requirements.txt -> -r indica arquivo
-
 import re
 import threading
 
@@ -118,43 +116,3 @@ if __name__ == "__main__":
 
             for t in THREADS:
                 t.join()
-
-
-# resposta_busca = requisicao(URL_AUTOMOVEIS)
-# if resposta_busca:
-
-# -> Parsing do HTML -> Modulo BS4(Beautiful Soup 4) -> Manipula arquivos HTML e XML
-# -> Instala BS4 com PIP
-# -> Utilizar a documentação para ajudar a saber como utiliza
-
-    # soup_busca = parsing(resposta_busca)
-    # print(soup.prettify()) # -> printa de forma organizada
-    # print(soup.title.get_text().strip())  # -> pega somente o texto dentro da tag title
-    # -> soup.find_all("a") -> acha todos os links do site
-    #    soup("a")
-    # -> soup.find_all('title', limit = 1) -> acha todos os titles do site
-
-    # links = soup.find_all('a')
-    # for link in links:
-    #     print(link['href']) # -> dentro das tags link quer que mostre somente a parte href
-
-    # if soup_busca:
-    #     links = encontrar_links(soup_busca)
-    #     for link in links:
-    #         resposta_anuncio = requisicao(DOMINIO + link)
-    #         if resposta_anuncio:
-    #             soup_anuncio = parsing(resposta_anuncio)
-    #             if soup_anuncio:
-    #                 print(encontrar_telefone(soup_anuncio))
-
-
-# Expressão regular(REGEX) -> regex101.com
-# \w -> encontra qualquer letra do alfabeto
-# [ab] -> encontra todas a letras a ou b
-# \w{5} -> tudo que tenha 5 letras juntas
-# \w{5}\b -> tudo que tenha 5 letras juntas em finais de string (ou começo se o \b for colocado na frente)
-# \b\w{5}\b -> a palavra inteira so tem 5 letras
-# \bS\w{5}\b -> a palavra começa com S maiusculo e tem 5 letras
-# \d -> pega um digito
-# [ \-\.]? -> caracteres que podem ou não estar no meio da string
-# \(?0?([1-9]{2})[ \-\.\)]{0,2}(9[ \-\.\)]?\d{4})[ \-\.\)]?(\d{4}) -> Expressão Regular para encontrar telefone
